@@ -2,7 +2,7 @@ use mysql::*;
 use mysql::prelude::*;
 
 fn connection() -> Result<PooledConn, mysql::Error>{
-    let url = "mysql://root:Sny-301mv@localhost:3306/cine";
+    let url = "mysql://root:toor@localhost:3306/cine";
     let pool = Pool::new(url)?;
     pool.get_conn()
 }
